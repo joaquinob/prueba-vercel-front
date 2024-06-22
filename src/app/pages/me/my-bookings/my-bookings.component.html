@@ -11,8 +11,8 @@
     </thead>
     <tbody>
       <tr>
-        <td>{{bookings[0].startDate.toLocaleDateString()}}</td>
-        <td>{{bookings[0].endDate.toLocaleDateString()}}</td>
+        <td>{{bookings[0].startDate | formatDate}}</td>
+        <td>{{bookings[0].endDate | formatDate}}</td>
         <td>{{bookings[0].vehicle.brand}}</td>
         <td>{{bookings[0].vehicle.model}}</td>
         <td>{{bookings[0].price}}</td>

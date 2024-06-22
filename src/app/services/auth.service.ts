@@ -9,7 +9,7 @@ import { User } from '../interfaces/user';
 export class AuthService {
 
   user: User|null = null
-  url: string = "https://backend-supercars-vercel.vercel.app/api/users"
+  url: string = "http://localhost:3000/api/users"
 
 
   constructor(private http : HttpClient, private cookieService: CookieService) {
